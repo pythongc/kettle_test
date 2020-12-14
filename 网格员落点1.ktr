@@ -26,6 +26,11 @@
           <enabled>Y</enabled>
           <name>ID_BATCH</name>
         </field>
+	 <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
         <field>
           <id>CHANNEL_ID</id>
           <enabled>Y</enabled>
