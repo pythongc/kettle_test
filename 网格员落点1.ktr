@@ -1,6 +1,6 @@
 <transformation>
  <field>
-          <id>CHANNEL_ID</id>
+          <id>CHANNEL_ID1</id>
           <enabled>Y</enabled>
           <name>CHANNEL_ID</name>
         </field>
