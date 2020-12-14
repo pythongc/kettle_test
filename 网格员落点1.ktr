@@ -1,4 +1,9 @@
 <transformation>
+ <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
   <info>
     <name>网格员落点1</name>
     <description/>
