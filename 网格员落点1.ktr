@@ -1,0 +1,2089 @@
+<transformation>
+  <info>
+    <name>网格员落点1</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>/PINGAN@10.22.233.184/数据清洗</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+      <slaveserver>
+        <name>kettle_server</name>
+        <hostname>192.168.1.126</hostname>
+        <port>9001</port>
+        <webAppName/>
+        <username>root</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb79ce10cc9da0ce</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>zzzzz</name>
+        <hostname>127.0.0.1</hostname>
+        <port>8081</port>
+        <webAppName/>
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname/>
+        <proxy_port/>
+        <non_proxy_hosts/>
+        <master>Y</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/12/04 13:28:56.417</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/12/12 17:06:26.338</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>ironman@10.22.233.184</name>
+    <server>10.22.233.184</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>ironman</username>
+    <password>Encrypted 2be98afc86afd968fe810bc7fd09faed4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STRICT_NUMBER_38_INTERPRETATION</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>pingan@10.22.233.184</name>
+    <server>10.22.233.184</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>orcl</database>
+    <port>1521</port>
+    <username>pingan</username>
+    <password>Encrypted 2be98afc86aa7a880a05abe79d095aed4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STRICT_NUMBER_38_INTERPRETATION</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>字段选择</from>
+      <to>JSON Input</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>生成记录</from>
+      <to>REST Client</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>REST Client</from>
+      <to>字段选择</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JSON Input</from>
+      <to>字段选择 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 2</from>
+      <to>表输入</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>表输入</from>
+      <to>字段选择 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>HTTP client</from>
+      <to>JSON Input 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 3</from>
+      <to>HTTP client</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JSON Input 2</from>
+      <to>字段选择 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 4</from>
+      <to>JavaScript代码</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JavaScript代码</from>
+      <to>字段选择 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择 5</from>
+      <to>Switch / Case 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>去除重复记录</from>
+      <to>表输出</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case 2</from>
+      <to>空操作 (什么也不做)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Switch / Case 2</from>
+      <to>去除重复记录</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>HTTP client</name>
+    <type>HTTP</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <url>http://172.17.229.230/gis/users/list.action</url>
+    <urlInField>N</urlInField>
+    <urlField>URL</urlField>
+    <encoding>UTF-8</encoding>
+    <httpLogin/>
+    <httpPassword>Encrypted </httpPassword>
+    <proxyHost/>
+    <proxyPort/>
+    <socketTimeout>10000</socketTimeout>
+    <connectionTimeout>10000</connectionTimeout>
+    <closeIdleConnectionsTime>-1</closeIdleConnectionsTime>
+    <lookup>
+      <arg>
+        <name>limit</name>
+        <parameter>limit</parameter>
+      </arg>
+      <arg>
+        <name>offset</name>
+        <parameter>offset</parameter>
+      </arg>
+      <arg>
+        <name>appKey</name>
+        <parameter>appKey</parameter>
+      </arg>
+      <arg>
+        <name>isLine</name>
+        <parameter>isLine</parameter>
+      </arg>
+      <arg>
+        <name>sid</name>
+        <parameter>sid</parameter>
+      </arg>
+      <arg>
+        <name>orgCode</name>
+        <parameter>orgCode</parameter>
+      </arg>
+    </lookup>
+    <result>
+      <name>client_result</name>
+      <code/>
+      <response_time/>
+      <response_header/>
+    </result>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>JSON Input</name>
+    <type>JsonInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <readurl>N</readurl>
+    <removeSourceField>N</removeSourceField>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
+    <ignoreMissingPath>Y</ignoreMissingPath>
+    <rownum_field/>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>sid</name>
+        <path>$.data.sid</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <IsAFile>N</IsAFile>
+    <valueField>result</valueField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>JSON Input 2</name>
+    <type>JsonInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <readurl>N</readurl>
+    <removeSourceField>N</removeSourceField>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
+    <ignoreMissingPath>Y</ignoreMissingPath>
+    <rownum_field/>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>centerLat_client</name>
+        <path>$.data.list[*].centerLat</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>centerLon_client</name>
+        <path>$.data.list[*].centerLon</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>id_client</name>
+        <path>$.data.list[*].id</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>isLine_client</name>
+        <path>$.data.list[*].isLine</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>line_client</name>
+        <path>$.data.list[*].line</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>name_client</name>
+        <path>$.data.list[*].name</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>orgCode_client</name>
+        <path>$.data.list[*].orgCode</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>orgId_client</name>
+        <path>$.data.list[*].orgId</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>orgName_client</name>
+        <path>$.data.list[*].orgName</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>originTime_client</name>
+        <path>$.data.list[*].originTime</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>originTimeStr_client</name>
+        <path>$.data.list[*].originTimeStr</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>telephone_client</name>
+        <path>$.data.list[*].telephone</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>userId_client</name>
+        <path>$.data.list[*].userId</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>userLabel_client</name>
+        <path>$.data.list[*].userLabel</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>userName_client</name>
+        <path>$.data.list[*].userName</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>userPhone_client</name>
+        <path>$.data.list[*].userPhone</path>
+        <type>None</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <IsAFile>N</IsAFile>
+    <valueField>client_result</valueField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>JavaScript代码</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+
+
+function md5(md5str) {
+    var createMD5String = function(string) {
+        var x = Array()
+        var k, AA, BB, CC, DD, a, b, c, d
+        var S11 = 7,
+            S12 = 12,
+            S13 = 17,
+            S14 = 22
+        var S21 = 5,
+            S22 = 9,
+            S23 = 14,
+            S24 = 20
+        var S31 = 4,
+            S32 = 11,
+            S33 = 16,
+            S34 = 23
+        var S41 = 6,
+            S42 = 10,
+            S43 = 15,
+            S44 = 21
+        string = uTF8Encode(string)
+        x = convertToWordArray(string)
+        a = 0x67452301
+        b = 0xEFCDAB89
+        c = 0x98BADCFE
+        d = 0x10325476
+        for (k = 0; k &lt; x.length; k += 16) {
+            AA = a
+            BB = b
+            CC = c
+            DD = d
+            a = FF(a, b, c, d, x[k + 0], S11, 0xD76AA478)
+            d = FF(d, a, b, c, x[k + 1], S12, 0xE8C7B756)
+            c = FF(c, d, a, b, x[k + 2], S13, 0x242070DB)
+            b = FF(b, c, d, a, x[k + 3], S14, 0xC1BDCEEE)
+            a = FF(a, b, c, d, x[k + 4], S11, 0xF57C0FAF)
+            d = FF(d, a, b, c, x[k + 5], S12, 0x4787C62A)
+            c = FF(c, d, a, b, x[k + 6], S13, 0xA8304613)
+            b = FF(b, c, d, a, x[k + 7], S14, 0xFD469501)
+            a = FF(a, b, c, d, x[k + 8], S11, 0x698098D8)
+            d = FF(d, a, b, c, x[k + 9], S12, 0x8B44F7AF)
+            c = FF(c, d, a, b, x[k + 10], S13, 0xFFFF5BB1)
+            b = FF(b, c, d, a, x[k + 11], S14, 0x895CD7BE)
+            a = FF(a, b, c, d, x[k + 12], S11, 0x6B901122)
+            d = FF(d, a, b, c, x[k + 13], S12, 0xFD987193)
+            c = FF(c, d, a, b, x[k + 14], S13, 0xA679438E)
+            b = FF(b, c, d, a, x[k + 15], S14, 0x49B40821)
+            a = GG(a, b, c, d, x[k + 1], S21, 0xF61E2562)
+            d = GG(d, a, b, c, x[k + 6], S22, 0xC040B340)
+            c = GG(c, d, a, b, x[k + 11], S23, 0x265E5A51)
+            b = GG(b, c, d, a, x[k + 0], S24, 0xE9B6C7AA)
+            a = GG(a, b, c, d, x[k + 5], S21, 0xD62F105D)
+            d = GG(d, a, b, c, x[k + 10], S22, 0x2441453)
+            c = GG(c, d, a, b, x[k + 15], S23, 0xD8A1E681)
+            b = GG(b, c, d, a, x[k + 4], S24, 0xE7D3FBC8)
+            a = GG(a, b, c, d, x[k + 9], S21, 0x21E1CDE6)
+            d = GG(d, a, b, c, x[k + 14], S22, 0xC33707D6)
+            c = GG(c, d, a, b, x[k + 3], S23, 0xF4D50D87)
+            b = GG(b, c, d, a, x[k + 8], S24, 0x455A14ED)
+            a = GG(a, b, c, d, x[k + 13], S21, 0xA9E3E905)
+            d = GG(d, a, b, c, x[k + 2], S22, 0xFCEFA3F8)
+            c = GG(c, d, a, b, x[k + 7], S23, 0x676F02D9)
+            b = GG(b, c, d, a, x[k + 12], S24, 0x8D2A4C8A)
+            a = HH(a, b, c, d, x[k + 5], S31, 0xFFFA3942)
+            d = HH(d, a, b, c, x[k + 8], S32, 0x8771F681)
+            c = HH(c, d, a, b, x[k + 11], S33, 0x6D9D6122)
+            b = HH(b, c, d, a, x[k + 14], S34, 0xFDE5380C)
+            a = HH(a, b, c, d, x[k + 1], S31, 0xA4BEEA44)
+            d = HH(d, a, b, c, x[k + 4], S32, 0x4BDECFA9)
+            c = HH(c, d, a, b, x[k + 7], S33, 0xF6BB4B60)
+            b = HH(b, c, d, a, x[k + 10], S34, 0xBEBFBC70)
+            a = HH(a, b, c, d, x[k + 13], S31, 0x289B7EC6)
+            d = HH(d, a, b, c, x[k + 0], S32, 0xEAA127FA)
+            c = HH(c, d, a, b, x[k + 3], S33, 0xD4EF3085)
+            b = HH(b, c, d, a, x[k + 6], S34, 0x4881D05)
+            a = HH(a, b, c, d, x[k + 9], S31, 0xD9D4D039)
+            d = HH(d, a, b, c, x[k + 12], S32, 0xE6DB99E5)
+            c = HH(c, d, a, b, x[k + 15], S33, 0x1FA27CF8)
+            b = HH(b, c, d, a, x[k + 2], S34, 0xC4AC5665)
+            a = II(a, b, c, d, x[k + 0], S41, 0xF4292244)
+            d = II(d, a, b, c, x[k + 7], S42, 0x432AFF97)
+            c = II(c, d, a, b, x[k + 14], S43, 0xAB9423A7)
+            b = II(b, c, d, a, x[k + 5], S44, 0xFC93A039)
+            a = II(a, b, c, d, x[k + 12], S41, 0x655B59C3)
+            d = II(d, a, b, c, x[k + 3], S42, 0x8F0CCC92)
+            c = II(c, d, a, b, x[k + 10], S43, 0xFFEFF47D)
+            b = II(b, c, d, a, x[k + 1], S44, 0x85845DD1)
+            a = II(a, b, c, d, x[k + 8], S41, 0x6FA87E4F)
+            d = II(d, a, b, c, x[k + 15], S42, 0xFE2CE6E0)
+            c = II(c, d, a, b, x[k + 6], S43, 0xA3014314)
+            b = II(b, c, d, a, x[k + 13], S44, 0x4E0811A1)
+            a = II(a, b, c, d, x[k + 4], S41, 0xF7537E82)
+            d = II(d, a, b, c, x[k + 11], S42, 0xBD3AF235)
+            c = II(c, d, a, b, x[k + 2], S43, 0x2AD7D2BB)
+            b = II(b, c, d, a, x[k + 9], S44, 0xEB86D391)
+            a = addUnsigned(a, AA)
+            b = addUnsigned(b, BB)
+            c = addUnsigned(c, CC)
+            d = addUnsigned(d, DD)
+        }
+        var tempValue = wordToHex(a) + wordToHex(b) + wordToHex(c) + wordToHex(d)
+        return tempValue.toLowerCase()
+    }
+    var rotateLeft = function(lValue, iShiftBits) {
+        return (lValue &lt;&lt; iShiftBits) | (lValue >>> (32 - iShiftBits))
+    }
+    var addUnsigned = function(lX, lY) {
+        var lX4, lY4, lX8, lY8, lResult
+        lX8 = (lX &amp; 0x80000000)
+        lY8 = (lY &amp; 0x80000000)
+        lX4 = (lX &amp; 0x40000000)
+        lY4 = (lY &amp; 0x40000000)
+        lResult = (lX &amp; 0x3FFFFFFF) + (lY &amp; 0x3FFFFFFF)
+        if (lX4 &amp; lY4) return (lResult ^ 0x80000000 ^ lX8 ^ lY8)
+        if (lX4 | lY4) {
+            if (lResult &amp; 0x40000000) return (lResult ^ 0xC0000000 ^ lX8 ^ lY8)
+            else return (lResult ^ 0x40000000 ^ lX8 ^ lY8)
+        } else {
+            return (lResult ^ lX8 ^ lY8)
+        }
+    }
+    var F = function(x, y, z) {
+        return (x &amp; y) | ((~x) &amp; z)
+    }
+    var G = function(x, y, z) {
+        return (x &amp; z) | (y &amp; (~z))
+    }
+    var H = function(x, y, z) {
+        return (x ^ y ^ z)
+    }
+    var I = function(x, y, z) {
+        return (y ^ (x | (~z)))
+    }
+    var FF = function(a, b, c, d, x, s, ac) {
+        a = addUnsigned(a, addUnsigned(addUnsigned(F(b, c, d), x), ac))
+        return addUnsigned(rotateLeft(a, s), b)
+    }
+    var GG = function(a, b, c, d, x, s, ac) {
+        a = addUnsigned(a, addUnsigned(addUnsigned(G(b, c, d), x), ac))
+        return addUnsigned(rotateLeft(a, s), b)
+    }
+    var HH = function(a, b, c, d, x, s, ac) {
+        a = addUnsigned(a, addUnsigned(addUnsigned(H(b, c, d), x), ac))
+        return addUnsigned(rotateLeft(a, s), b)
+    }
+    var II = function(a, b, c, d, x, s, ac) {
+        a = addUnsigned(a, addUnsigned(addUnsigned(I(b, c, d), x), ac))
+        return addUnsigned(rotateLeft(a, s), b)
+    }
+    var convertToWordArray = function(string) {
+        var lWordCount
+        var lMessageLength = string.length
+        var lNumberOfWordsTempOne = lMessageLength + 8
+        var lNumberOfWordsTempTwo = (lNumberOfWordsTempOne - (lNumberOfWordsTempOne % 64)) / 64
+        var lNumberOfWords = (lNumberOfWordsTempTwo + 1) * 16
+        var lWordArray = Array(lNumberOfWords - 1)
+        var lBytePosition = 0
+        var lByteCount = 0
+        while (lByteCount &lt; lMessageLength) {
+            lWordCount = (lByteCount - (lByteCount % 4)) / 4
+            lBytePosition = (lByteCount % 4) * 8
+            lWordArray[lWordCount] = (lWordArray[lWordCount] | (string.charCodeAt(lByteCount) &lt;&lt; lBytePosition))
+            lByteCount++
+        }
+        lWordCount = (lByteCount - (lByteCount % 4)) / 4
+        lBytePosition = (lByteCount % 4) * 8
+        lWordArray[lWordCount] = lWordArray[lWordCount] | (0x80 &lt;&lt; lBytePosition)
+        lWordArray[lNumberOfWords - 2] = lMessageLength &lt;&lt; 3
+        lWordArray[lNumberOfWords - 1] = lMessageLength >>> 29
+        return lWordArray
+    }
+    var wordToHex = function(lValue) {
+        var WordToHexValue = '',
+            WordToHexValueTemp = '',
+            lByte, lCount
+        for (lCount = 0; lCount &lt;= 3; lCount++) {
+            lByte = (lValue >>> (lCount * 8)) &amp; 255
+            WordToHexValueTemp = '0' + lByte.toString(16)
+            WordToHexValue = WordToHexValue + WordToHexValueTemp.substr(WordToHexValueTemp.length - 2, 2)
+        }
+        return WordToHexValue
+    }
+    var uTF8Encode = function(string) {
+        string = string.toString().replace(/\x0d\x0a/g, '\x0a')
+        var output = ''
+        for (var n = 0; n &lt; string.length; n++) {
+            var c = string.charCodeAt(n)
+            if (c &lt; 128) {
+                output += String.fromCharCode(c)
+            } else if ((c > 127) &amp;&amp; (c &lt; 2048)) {
+                output += String.fromCharCode((c >> 6) | 192)
+                output += String.fromCharCode((c &amp; 63) | 128)
+            } else {
+                output += String.fromCharCode((c >> 12) | 224)
+                output += String.fromCharCode(((c >> 6) &amp; 63) | 128)
+                output += String.fromCharCode((c &amp; 63) | 128)
+            }
+        }
+        return output
+    }
+    return createMD5String(md5str)
+}
+
+
+var is_line = isLine_client
+if (is_line == "true") {
+	var IS_ONLINE = "1"
+} else {
+	var IS_ONLINE = "0"
+}
+if (USER_NAME == null) {
+	var NEW_USER_NAME = "0"
+} else {
+	var NEW_USER_NAME = USER_NAME
+}
+var md5_arr = [ID,PHONE,USER_NAME,GRID,LAT,LON,REGION_CODE,REGION_NAME,CREATE_TIME,IS_DELETED]
+var md5_str = md5_arr.join("-")
+var id_md5 = md5(md5_str)
+</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>IS_ONLINE</name>
+        <rename>IS_ONLINE</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>id_md5</name>
+        <rename>id_md5</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>NEW_USER_NAME</name>
+        <rename>NEW_USER_NAME</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>REST Client</name>
+    <type>Rest</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <applicationType>JSON</applicationType>
+    <method>POST</method>
+    <url>127.0.0.1/test/a</url>
+    <urlInField>Y</urlInField>
+    <dynamicMethod>N</dynamicMethod>
+    <methodFieldName/>
+    <urlField>url</urlField>
+    <bodyField>body</bodyField>
+    <httpLogin/>
+    <httpPassword>Encrypted </httpPassword>
+    <proxyHost/>
+    <proxyPort/>
+    <preemptive>N</preemptive>
+    <trustStoreFile/>
+    <trustStorePassword>Encrypted </trustStorePassword>
+    <headers>
+      </headers>
+    <parameters>
+      </parameters>
+    <matrixParameters>
+      </matrixParameters>
+    <result>
+      <name>result</name>
+      <code/>
+      <response_time/>
+      <response_header/>
+    </result>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Switch / Case 2</name>
+    <type>SwitchCase</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fieldname>USER_NAME</fieldname>
+    <use_contains>N</use_contains>
+    <case_value_type>String</case_value_type>
+    <case_value_format/>
+    <case_value_decimal/>
+    <case_value_group/>
+    <default_target_step>去除重复记录</default_target_step>
+    <cases>
+      <case>
+        <value>0</value>
+        <target_step>空操作 (什么也不做)</target_step>
+      </case>
+    </cases>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>去除重复记录</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>ID</name>
+        <case_insensitive>Y</case_insensitive>
+      </field>
+      <field>
+        <name>LAT</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>LON</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+      <field>
+        <name>GRID</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>body</name>
+      </field>
+      <field>
+        <name>url</name>
+      </field>
+      <field>
+        <name>limit</name>
+      </field>
+      <field>
+        <name>offset</name>
+      </field>
+      <field>
+        <name>appKey</name>
+      </field>
+      <field>
+        <name>isLine</name>
+      </field>
+      <field>
+        <name>result</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>limit</name>
+      </field>
+      <field>
+        <name>offset</name>
+      </field>
+      <field>
+        <name>appKey</name>
+      </field>
+      <field>
+        <name>isLine</name>
+      </field>
+      <field>
+        <name>sid</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>LIMIT</name>
+        <rename>limit</rename>
+      </field>
+      <field>
+        <name>OFFSET</name>
+        <rename>offset</rename>
+      </field>
+      <field>
+        <name>APPKEY</name>
+        <rename>appKey</rename>
+      </field>
+      <field>
+        <name>ISLINE</name>
+        <rename>isLine</rename>
+      </field>
+      <field>
+        <name>SID</name>
+        <rename>sid</rename>
+      </field>
+      <field>
+        <name>ORGINTERNALCODE</name>
+        <rename>orgCode</rename>
+      </field>
+      <field>
+        <name>REGION_CODE</name>
+      </field>
+      <field>
+        <name>REGION_NAME</name>
+      </field>
+      <field>
+        <name>ORG2</name>
+      </field>
+      <field>
+        <name>ORG3</name>
+      </field>
+      <field>
+        <name>ORG4</name>
+      </field>
+      <field>
+        <name>ORG5</name>
+      </field>
+      <field>
+        <name>JOB</name>
+      </field>
+      <field>
+        <name>CREATE_TIME</name>
+      </field>
+      <field>
+        <name>IS_DELETED</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 4</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_client</name>
+        <rename>ID</rename>
+      </field>
+      <field>
+        <name>telephone_client</name>
+        <rename>PHONE</rename>
+      </field>
+      <field>
+        <name>name_client</name>
+        <rename>USER_NAME</rename>
+      </field>
+      <field>
+        <name>isLine_client</name>
+      </field>
+      <field>
+        <name>orgName_client</name>
+        <rename>GRID</rename>
+      </field>
+      <field>
+        <name>centerLat_client</name>
+        <rename>LAT</rename>
+      </field>
+      <field>
+        <name>centerLon_client</name>
+        <rename>LON</rename>
+      </field>
+      <field>
+        <name>REGION_CODE</name>
+      </field>
+      <field>
+        <name>REGION_NAME</name>
+      </field>
+      <field>
+        <name>CREATE_TIME</name>
+      </field>
+      <field>
+        <name>IS_DELETED</name>
+      </field>
+      <field>
+        <name>id_client</name>
+        <rename>MD5_CODE</rename>
+      </field>
+      <field>
+        <name>JOB</name>
+      </field>
+      <field>
+        <name>ORG2</name>
+      </field>
+      <field>
+        <name>ORG3</name>
+      </field>
+      <field>
+        <name>ORG4</name>
+      </field>
+      <field>
+        <name>ORG5</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>id_md5</name>
+        <rename>ID</rename>
+      </field>
+      <field>
+        <name>PHONE</name>
+      </field>
+      <field>
+        <name>NEW_USER_NAME</name>
+        <rename>USER_NAME</rename>
+      </field>
+      <field>
+        <name>IS_ONLINE</name>
+      </field>
+      <field>
+        <name>GRID</name>
+      </field>
+      <field>
+        <name>LAT</name>
+      </field>
+      <field>
+        <name>LON</name>
+      </field>
+      <field>
+        <name>REGION_CODE</name>
+      </field>
+      <field>
+        <name>REGION_NAME</name>
+      </field>
+      <field>
+        <name>CREATE_TIME</name>
+      </field>
+      <field>
+        <name>IS_DELETED</name>
+      </field>
+      <field>
+        <name>id_md5</name>
+        <rename>MD5_CODE</rename>
+      </field>
+      <field>
+        <name>JOB</name>
+      </field>
+      <field>
+        <name>ORG2</name>
+      </field>
+      <field>
+        <name>ORG3</name>
+      </field>
+      <field>
+        <name>ORG4</name>
+      </field>
+      <field>
+        <name>ORG5</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>生成记录</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>body</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>{"password": "QZ5Hx519mf+WgX35yvoeUg==", "username": "Anhq001@jxsg"} </nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>url</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>http://172.17.229.230:9088/sso/validateUser</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>limit</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>50</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>offset</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>1</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>appKey</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>b09bbaf3d4344916b22c1726098dae20</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>isLine</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>all</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>空操作 (什么也不做)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>表输入</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>pingan@10.22.233.184</connection>
+    <sql>select 
+? as limit, 
+? as offset, 
+? as appKey, 
+? as isLine, 
+? as sid, 
+a.ORGINTERNALCODE, 
+b.org5_id as REGION_CODE,
+b.org5_name as REGION_NAME,
+b.org2_name as org2,
+b.org3_name as org3,
+b.org4_name as org4,
+b.org5_name as org5,
+'专职网格员' as job,
+sysdate as create_time, 
+'2' as IS_DELETED  
+-- ORGANIZATIONS_NEW 表是天阙给的excel导入的
+from ORGANIZATIONS_NEW a 
+left join dim_org b on a.ORGINTERNALCODE = b.ORGINTERNALCODE
+where a.orglevel = '片组片格'</sql>
+    <limit>0</limit>
+    <lookup>字段选择 2</lookup>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>表输出</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>ironman@10.22.233.184</connection>
+    <schema/>
+    <table>TBL_PINGAN_GRID_OPERATOR</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>ID</column_name>
+        <stream_name>ID</stream_name>
+      </field>
+      <field>
+        <column_name>PHONE</column_name>
+        <stream_name>PHONE</stream_name>
+      </field>
+      <field>
+        <column_name>USER_NAME</column_name>
+        <stream_name>USER_NAME</stream_name>
+      </field>
+      <field>
+        <column_name>IS_ONLINE</column_name>
+        <stream_name>IS_ONLINE</stream_name>
+      </field>
+      <field>
+        <column_name>GRID</column_name>
+        <stream_name>GRID</stream_name>
+      </field>
+      <field>
+        <column_name>LAT</column_name>
+        <stream_name>LAT</stream_name>
+      </field>
+      <field>
+        <column_name>LON</column_name>
+        <stream_name>LON</stream_name>
+      </field>
+      <field>
+        <column_name>REGION_CODE</column_name>
+        <stream_name>REGION_CODE</stream_name>
+      </field>
+      <field>
+        <column_name>REGION_NAME</column_name>
+        <stream_name>REGION_NAME</stream_name>
+      </field>
+      <field>
+        <column_name>CREATE_TIME</column_name>
+        <stream_name>CREATE_TIME</stream_name>
+      </field>
+      <field>
+        <column_name>IS_DELETED</column_name>
+        <stream_name>IS_DELETED</stream_name>
+      </field>
+      <field>
+        <column_name>MD5_CODE</column_name>
+        <stream_name>MD5_CODE</stream_name>
+      </field>
+      <field>
+        <column_name>JOB</column_name>
+        <stream_name>JOB</stream_name>
+      </field>
+      <field>
+        <column_name>ORG2</column_name>
+        <stream_name>ORG2</stream_name>
+      </field>
+      <field>
+        <column_name>ORG3</column_name>
+        <stream_name>ORG3</stream_name>
+      </field>
+      <field>
+        <column_name>ORG4</column_name>
+        <stream_name>ORG4</stream_name>
+      </field>
+      <field>
+        <column_name>ORG5</column_name>
+        <stream_name>ORG5</stream_name>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>608</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
